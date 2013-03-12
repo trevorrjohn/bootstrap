@@ -31,10 +31,10 @@
   .clearfix();
 }
 
-// Set width to auto for default container
+// Set width to container-width for default container
 // We then reset it for fixed navbars in the #gridSystem mixin
 .navbar .container {
-  width: auto;
+  @include container-fixed();
 }
 
 // Override the default collapsed state
